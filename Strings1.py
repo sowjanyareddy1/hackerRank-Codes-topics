@@ -4,7 +4,9 @@
 
 def count_substring(string, sub_string):
     count = 0
+    # using the length of the string to check the match
     for i in range(0,len(string)):
+        # here from the i value to the end checking if substring is there
         if string[i:].startswith(sub_string):
             count += 1
     return count
